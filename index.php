@@ -1,21 +1,30 @@
 <?php get_header(); ?>
 
+
+<main>
 <?php have_posts(); ?>
-<h2>Latest Articles</h2>
 
-<ul>
-    <?php while(have_posts()): the_post(); ?>
+    <h1>Latest Articles</h1>
 
-    <li>
-    <?php has_post_thumbnail(); ?>
-        <img src="<?php the_post_thumbnail_url(); ?>" alt="">
-        <span><?php the_time('Y/m/d'); ?></span>    
-        <span><?php the_title(); ?></span>
-        <a href="<?php the_permalink(); ?>">READ MORE</a>
-    </li>
-    <?php endwhile; ?>
+    <div class="content">
+        <ul class="img-box">
+        <?php while(have_posts()): the_post(); ?>
 
-</ul>
+        <li>
+            <?php has_post_thumbnail(); ?>
+            <img src="<?php the_post_thumbnail_url(); ?>" alt="">
+            <span class="date"><?php the_time('Y/m/d'); ?></span>    
+            <span class="text-box"><?php the_title(); ?></span>
+            <div class="readmore">                 
+                <a href="<?php the_permalink(); ?>">READ MORE</a>
+            </div>
+        </li>
+        <?php endwhile; ?>
+
+        </ul>
+
+    </div>
+</main>
 
 
 <?PHP get_footer(); ?>
