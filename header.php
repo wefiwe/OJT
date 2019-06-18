@@ -35,7 +35,7 @@
             <li><a href="">Menu04</a></li>
         </ul> -->
     </nav>
-        <div class="sample">
+        <div class="main-img">
         <img src="<?php header_image(); ?>" alt="">
         <!-- <img src="./assets/img/folder/visual_1_pc.png" alt=""> -->
         </div>
