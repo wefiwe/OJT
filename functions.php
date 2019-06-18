@@ -7,7 +7,7 @@
 
     add_theme_support('custom-header',
     array (
-        'width' => 1120,
+        'width' => 1045,
         'header-text' => false,
     ));
 
