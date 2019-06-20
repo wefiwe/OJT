@@ -43,7 +43,8 @@
             <p>進化し続ける「街」アメリカンビレッジマガジン</p>
         </div>
         <div class="text-icon">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_text_pc.png" alt="">
+            <img class="pc" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_text_pc.png" alt="">
+            <img class="sp" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_text_sp.png" alt="">
         </div>
     </header>
 

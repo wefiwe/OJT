@@ -1,19 +1,28 @@
-<?php get_header(); ?>
+ <?php get_header(); ?>
 
-<?php 
-if(have_posts()) :
-    while (have_posts()) :
-        the_post();
-// 記事を表示する部分のソース
+<div class="content">
+  <main>
 
-    endwhile;
-else:
-    // 記事が無い場合の表示ソース
+  <?php if(have_posts()): while(have_posts()):the_post(); ?>
 
-endif;
+    <h1><a><?php the_title(); ?></a></h1>
+
     
+    <p><?php the_content(); ?></p>
 
-?>
+    <?php endwhile; endif; ?>
+
+    <?php previous_post_link('%link','前へ'); ?>
+    <?php next_post_link('%link','次へ'); ?>
+
+  </main>
+
+</div>
+
+
+<?php get_footer(); ?>
+
+
 
 
 
