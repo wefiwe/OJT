@@ -36,8 +36,11 @@
         </ul> -->
     </nav>
         <div class="main-img">
-        <img src="<?php header_image(); ?>" alt="">
-        <!-- <img src="./assets/img/folder/visual_1_pc.png" alt=""> -->
+        <!-- <img class="pc" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_1_pc.png" alt=""> -->
+        <!-- <img class="sp" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_1_sp.png" alt=""> -->
+
+        <img class="pc" src="<?php header_image(); ?>" alt="">
+        <!-- <img class="sp" src="<?php header_image(); ?>" alt=""> -->
         </div>
         <div class="text">
             <p>進化し続ける「街」アメリカンビレッジマガジン</p>
