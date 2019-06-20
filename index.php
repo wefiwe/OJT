@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 
-
 <main>
-<?php have_posts(); ?>
+<?php query_posts('posts_per_page=6'); ?>    
+<?php if (have_posts()): ?>
 
     <h1>Latest Articles</h1>
 
     <div class="content">
         <ul class="img-box">
+            
         <?php while(have_posts()): the_post(); ?>
 
         <li>
@@ -23,8 +24,15 @@
 
         </ul>
 
-    </div>
-</main>
+<?php else: ?>
+  <h2 class="sub-title">投稿はありません</h2>
+<?php endif; ?>
 
+</div>
+<div>
+    <a href=""></a>
+</div>
+
+</main>
 
 <?PHP get_footer(); ?>
