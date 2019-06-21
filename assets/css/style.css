@@ -61,7 +61,14 @@ header{
     left: -63px;
 }
 
-
+.text-icon{
+    /* float: right; */
+    position: absolute;
+    z-index: 2;
+    right: -50px;
+    /* 修正 */
+    bottom: -12px;
+}
 
 main{
     margin: 0 auto;
