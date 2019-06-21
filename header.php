@@ -36,19 +36,25 @@
         </ul> -->
     </nav>
         <div class="main-img">
-        <!-- <img class="pc" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_1_pc.png" alt=""> -->
-        <!-- <img class="sp" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_1_sp.png" alt=""> -->
+            <!-- <img class="pc" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_1_pc.png" alt=""> -->
+            <!-- <img class="sp" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_1_sp.png" alt=""> -->
+            <div class="pc">
+            <?php echo do_shortcode('[metaslider id="99"]'); ?>
+            </div>
+            <div class="sp">
+            <?php echo do_shortcode('[metaslider id="106"]'); ?>
+            </div>
 
-        <img class="pc" src="<?php header_image(); ?>" alt="">
-        <!-- <img class="sp" src="<?php header_image(); ?>" alt=""> -->
+        
+            <div class="text-icon">
+                <img class="pc" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_text_pc.png" alt="">
+                <img class="sp" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_text_sp.png" alt="">
+            </div>
         </div>
         <div class="text">
-            <p>進化し続ける「街」アメリカンビレッジマガジン</p>
+        <p>進化し続ける「街」<span class="br">アメリカンビレッジマガジン</span></p>
         </div>
-        <div class="text-icon">
-            <img class="pc" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_text_pc.png" alt="">
-            <img class="sp" src="<?php echo get_template_directory_uri(); ?>/assets/img/folder/visual_text_sp.png" alt="">
-        </div>
+
     </header>
 
 

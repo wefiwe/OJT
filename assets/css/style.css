@@ -22,6 +22,9 @@ header{
     display: flex;
     float: right;
     margin-top: 71px;
+    /* 修正 */
+    position: relative;
+    z-index: 2;
 }
 
 .menu li a{
@@ -57,7 +60,8 @@ header{
     position: absolute;
     z-index: 2;
     right: -50px;
-    bottom: -50px;
+    /* 修正 */
+    bottom: -12px;
 }
 
 main{
@@ -235,7 +239,8 @@ footer{
 
     .main-img{
         max-width: 100%;
-        position: absolute;
+        /* 修正 */
+        /* position: absolute; */
         left: 0;
         top: 278px;
     }
